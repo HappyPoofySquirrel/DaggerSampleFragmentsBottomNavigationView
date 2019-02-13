@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context="com.example.guyverhopkins.bottomnavigationviewsample.main.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryDark"
+        app:elevation="64dp"
+        app:itemIconTint="@drawable/bottom_nav_state_color"
+        app:itemTextColor="@drawable/bottom_nav_text_state_color"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+    <!--must use android:background to keep animation -->
+</android.support.design.widget.CoordinatorLayout>
